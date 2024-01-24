@@ -5,11 +5,362 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
+    <div class="container-fluid mx-auto py-3 px-5">
+
+        <header>
+
+            <!-- large device nav starts -->
+
+            <nav class="hidden md:flex items-center justify-between px-3 sticky top-0 z-10 bg-white">
+
+                <div class="mr-auto md:mr-0">
+                    <span class="text-2xl font-bold">Hockey<span class="text-red-500">'</span>s</span>
+                </div>
+        
+                <ul class="flex">
+                    <li class="text-red-500 hover:text-red-500 font-bold m-4">Home</li>
+                    <li class="text-gray-500 hover:text-red-500 m-4">About</li>
+                    <li class="text-gray-500 hover:text-red-500 m-4">Pages</li>
+                    <li class="text-gray-500 hover:text-red-500 m-4">Blog</li>
+                    <li class="text-gray-500 hover:text-red-500 m-4">Contact</li>
+                </ul>
+        
+                <div class="flex items-center">
+                    <span class="hidden md:flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </span>
+                    <a class="btn btn-ghost bg-red-500 text-white ml-5">Get Tickets</a>
+                </div>
+
+            </nav>
+
+            <!-- large device nav ends -->
+
+            <!-- mobile nav starts -->
+
+            <nav class="md:hidden flex justify-start md:justify-between items-center px-3 relative dropdown sticky top-0 z-10 bg-white py-2">
+
+                <div tabindex="0" class="mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </div>
+
+                <div class="mr-auto md:mr-0">
+                    <span class="text-2xl font-bold">Hockey<span class="text-red-500">'</span>s</span>
+                </div>
+
+                <ul class="z-[1] shadow bg-base-100 dropdown-content rounded-xl absolute left-3 right-3 top-full my-4 dropdown-content">
+                    <li class="text-xl text-red-500 hover:text-red-500 font-bold m-4">Home</li>
+                    <li class="text-xl text-gray-500 hover:text-red-500 m-4">About</li>
+                    <li class="text-xl text-gray-500 hover:text-red-500 m-4">Pages</li>
+                    <li class="text-xl text-gray-500 hover:text-red-500 m-4">Blog</li>
+                    <li class="text-xl text-gray-500 hover:text-red-500 m-4">Contact</li>
+                </ul>
+        
+                <div>
+                    <a class="btn btn-ghost bg-red-500 text-white">Get Tickets</a>
+                </div>
+
+            </nav>
+
+            <!-- mobile nav ends -->
+
+            <!-- carousel starts -->
+
+            <div class="carousel w-full py-3">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute bottom-3 w-full flex justify-center md:justify-start">
+                    <a href="#slide4" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&lt;</a> 
+                    <a href="#slide2" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&gt;</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/2.png" class="w-full" />
+                  <div class="absolute bottom-3 w-full flex justify-center md:justify-start">
+                    <a href="#slide1" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&lt;</a> 
+                    <a href="#slide3" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&gt;</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/3.png" class="w-full" />
+                  <div class="absolute bottom-3 w-full flex justify-center md:justify-start">
+                    <a href="#slide2" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&lt;</a> 
+                    <a href="#slide4" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&gt;</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/4.png" class="w-full" />
+                  <div class="absolute bottom-3 w-full flex justify-center md:justify-start">
+                    <a href="#slide3" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&lt;</a> 
+                    <a href="#slide1" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&gt;</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- carousel ends -->
+
+        </header>
+
+
+        <main class="py-8">
+
+            <!-- hockey's section starts -->
+
+            <div class="w-full">
+
+                <h2 class="text-2xl text-center font-semibold">Professional Hockeys Club</h2>
+                <p class="mx-auto text-center pt-3 pb-8 w-full md:w-3/5 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi aspernatur natus, odio sed neque.</p>
+                
+                <div class="flex flex-wrap">
+
+                    <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-8">
+                        <div class="flex bg-base-100 justify-center">
+                            <div class="radial-progress text-red-500" style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
+                        </div>
+                        <h3 class="text-center py-3 text-xl">Prayer Facility</h3>
+                        <p class="text-center text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-8">
+                        <div class="flex bg-base-100 justify-center">
+                            <div class="radial-progress text-green-600" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
+                        </div>
+                        <h3 class="text-center py-3 text-xl">Experienced Coach</h3>
+                        <p class="text-center text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-8">
+                        <div class="flex bg-base-100 justify-center">
+                            <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
+                        </div>
+                        <h3 class="text-center py-3 text-xl">Senior Player</h3>
+                        <p class="text-center text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/4 px-2 mb-8">
+                        <div class="flex bg-base-100 justify-center">
+                            <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
+                        </div>
+                        <h3 class="text-center py-3 text-xl">Training Ground</h3>
+                        <p class="text-center text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- hockey's section ends -->
+
+
+            <!-- program section starts -->
+
+            <div>
+
+                <h2 class="text-center text-3xl font-semibold">Program Sections</h2>
+                <p class="text-center w-full md:w-1/2 mx-auto text-slate-500 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque corrupti id cumque, rerum aperiam!</p>
+
+                <div class="flex flex-wrap justify-between py-5">
+
+                    <div class="w-full md:w-1/2 p-2">
+                        <div style="background:url('Images/2.png');background-repeat:no-repeat;background-size:100% 100%;display:flex;flex-direction:column;justify-content:flex-end;" class="bg-red-500 my-2 aspect-video p-5">
+                            <h3 class="text-white text-2xl font-bold">Junior Program</h3>
+                            <p class="py-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta necessitatibus fuga amet.</p>
+                            <span><a href="" class="btn btn-ghost bg-red-500 text-white font-bold">Register Now!</a></span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-2">
+                        <div style="background:url('Images/3.png');background-repeat:no-repeat;background-size:100% 100%;display:flex;flex-direction:column;justify-content:flex-end;" class="bg-red-500 my-2 aspect-video p-5">
+                            <h3 class="text-white text-2xl font-bold">Junior Program</h3>
+                            <p class="py-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta necessitatibus fuga amet.</p>
+                            <span><a href="" class="btn btn-ghost bg-red-500 text-white font-bold">Register Now!</a></span>
+                        </div>
+                    </div>
+                    <div style="background:url('Images/4.png');background-repeat:no-repeat;background-size:100% 100%;display:flex;flex-direction:column;justify-content:flex-end;" class="w-full bg-red-500 my-2 aspect-video p-5">
+                        <h3 class="text-white text-2xl font-bold">Professional Program</h3>
+                        <p class="py-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta necessitatibus fuga amet.</p>
+                        <span><a href="" class="btn btn-ghost bg-red-500 text-white font-bold">Register Now!</a></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- program section ends -->
+
+
+
+            <!-- products section starts -->
+
+            <div class="flex-col">
+
+                <div class="border-y-2 border-slate-300 border-dashed py-5 my-8">
+
+                    <h2 class="text-center text-3xl font-semibold pb-5">Our New Products</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam illo libero.</p>
+
+                </div>
+
+                
+                <div class="flex flex-wrap justify-between">
+
+                    <div class="item my-2 w-full md:w-[49%] aspect-[2.3/3] md:aspect-[7/3] flex flex-wrap border-2 border-slate-200 rounded-xl p-3">
+                        <div class="w-full md:w-[35%]">
+                            <img src="Images/5.png" class="w-full h-full" alt="">
+                        </div>
+                        <div style="display:flex;flex-direction:column;justify-content:space-between;" class="w-full md:w-[65%] px-3">
+                            <div class="pt-5 md:pt-0">
+                                <span class="text-slate-500"><i style="color:darkorange" class="fa fa-solid fa-star"></i> 5.0 <i class="fa fa-light fa-eye"></i> 20 <i class="fa fa-regular fa-heart"></i> 200</span>
+                                <h3 class="font-semibold pb-3">World Cup Jersey</h3>
+                                <p class="text-sm text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="flex flex-wrap justify-between pt-12">
+                                <small class="w-full md:w-[45%] text-red-500">Price - $22.00</small>
+                                <small class="w-full md:w-[55%] text-slate-400 font-bold text-start md:text-end">Delivery Fee: Free</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item my-2 w-full md:w-[49%] aspect-[2.3/3] md:aspect-[8/3] flex flex-wrap border-2 border-slate-200 rounded-xl p-3">
+                        <div class="w-full md:w-[35%]">
+                            <img src="Images/6.png" class="w-full h-full" alt="">
+                        </div>
+                        <div style="display:flex;flex-direction:column;justify-content:space-between;" class="w-full md:w-[65%] px-3">
+                            <div class="pt-5 md:pt-0">
+                                <span class="text-slate-500"><i style="color:darkorange" class="fa fa-solid fa-star"></i> 5.0 <i class="fa fa-light fa-eye"></i> 20 <i class="fa fa-regular fa-heart"></i> 200</span>
+                                <h3 class="font-semibold pb-3">Premium Football</h3>
+                                <p class="text-sm text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="flex flex-wrap justify-between pt-12">
+                                <small class="w-full md:w-[45%] text-red-500">Price - $22.00</small>
+                                <small class="w-full md:w-[55%] text-slate-400 font-bold text-start md:text-end">Delivery Fee: Free</small>
+                            </div>
+                        </div>
+                    </div>
     
+                    <div class="item my-2 w-full md:w-[49%] aspect-[2.3/3] md:aspect-[8/3] flex flex-wrap border-2 border-slate-200 rounded-xl p-3">
+                        <div class="w-full md:w-[35%]">
+                            <img src="Images/7.png" class="w-full h-full" alt="">
+                        </div>
+                        <div style="display:flex;flex-direction:column;justify-content:space-between;" class="w-full md:w-[65%] px-3">
+                            <div class="pt-5 md:pt-0">
+                                <span class="text-slate-500"><i style="color:darkorange" class="fa fa-solid fa-star"></i> 5.0 <i class="fa fa-light fa-eye"></i> 20 <i class="fa fa-regular fa-heart"></i> 200</span>
+                                <h3 class="font-semibold pb-3">Cap For Hockeys</h3>
+                                <p class="text-sm text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="flex flex-wrap justify-between pt-12">
+                                <small class="w-full md:w-[45%] text-red-500">Price - $22.00</small>
+                                <small class="w-full md:w-[55%] text-slate-400 font-bold text-start md:text-end">Delivery Fee: Free</small>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item my-2 w-full md:w-[49%] aspect-[2.3/3] md:aspect-[8/3] flex flex-wrap border-2 border-slate-200 rounded-xl p-3">
+                        <div class="w-full md:w-[35%]">
+                            <img src="Images/8.png" class="w-full h-full" alt="">
+                        </div>
+                        <div style="display:flex;flex-direction:column;justify-content:space-between;" class="w-full md:w-[65%] px-3">
+                            <div class="pt-5 md:pt-0">
+                                <span class="text-slate-500"><i style="color:darkorange" class="fa fa-solid fa-star"></i> 5.0 <i class="fa fa-light fa-eye"></i> 20 <i class="fa fa-regular fa-heart"></i> 200</span>
+                                <h3 class="font-semibold pb-3">Premium Jersey</h3>
+                                <p class="text-sm text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="flex flex-wrap justify-between pt-12">
+                                <small class="w-full md:w-[45%] text-red-500">Price - $22.00</small>
+                                <small class="w-full md:w-[55%] text-slate-400 font-bold text-start md:text-end">Delivery Fee: Free</small>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item my-2 w-full md:w-[49%] aspect-[2.3/3] md:aspect-[8/3] flex flex-wrap border-2 border-slate-200 rounded-xl p-3">
+                        <div class="w-full md:w-[35%]">
+                            <img src="Images/9.png" class="w-full h-full" alt="">
+                        </div>
+                        <div style="display:flex;flex-direction:column;justify-content:space-between;" class="w-full md:w-[65%] px-3">
+                            <div class="pt-5 md:pt-0">
+                                <span class="text-slate-500"><i style="color:darkorange" class="fa fa-solid fa-star"></i> 5.0 <i class="fa fa-light fa-eye"></i> 20 <i class="fa fa-regular fa-heart"></i> 200</span>
+                                <h3 class="font-semibold pb-3">Helmet For Hockey</h3>
+                                <p class="text-sm text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="flex flex-wrap justify-between pt-12">
+                                <small class="w-full md:w-[45%] text-red-500">Price - $22.00</small>
+                                <small class="w-full md:w-[55%] text-slate-400 font-bold text-start md:text-end">Delivery Fee: Free</small>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item my-2 w-full md:w-[49%] aspect-[2.3/3] md:aspect-[8/3] flex flex-wrap border-2 border-slate-200 rounded-xl p-3">
+                        <div class="w-full md:w-[35%]">
+                            <img src="Images/10.png" class="w-full h-full" alt="">
+                        </div>
+                        <div style="display:flex;flex-direction:column;justify-content:space-between;" class="w-full md:w-[65%] px-3">
+                            <div class="pt-5 md:pt-0">
+                                <span class="text-slate-500"><i style="color:darkorange" class="fa fa-solid fa-star"></i> 5.0 <i class="fa fa-light fa-eye"></i> 20 <i class="fa fa-regular fa-heart"></i> 200</span>
+                                <h3 class="font-semibold pb-3">World Cup Football</h3>
+                                <p class="text-sm text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="flex flex-wrap justify-between pt-12">
+                                <small class="w-full md:w-[45%] text-red-500">Price - $22.00</small>
+                                <small class="w-full md:w-[55%] text-slate-400 font-bold text-start md:text-end">Delivery Fee: Free</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- products section ends -->
+
+
+        </main>
+
+
+        <!-- footer section starts -->
+
+        <footer class="bg-zinc-700 flex flex-wrap justify-evenly text-white pb-20 pt-12">
+
+            <div class="w-[71%] md:w-[40%] p-5">
+                
+                <h3 class="text-center md:text-start text-2xl font-semibol pb-5">Get In Touch</h3>
+                <p class="text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae est delectus!</p>
+                <p class="text-center md:text-start"><i style="color:darkorange" class="fa fa-regular fa-envelope"></i> hockeys@support.com</p>
+                <p class="text-center md:text-start"><i style="color:darkorange" class="fa fa-solid fa-phone"></i> (+62123-321-546)</p>
+            </div>
+            <div class="w-[30%] md:w-[20%] py-5">
+                <h3 class="text-center md:text-start text-xl font-semibold pb-5">Company</h3>
+                <p class="text-center md:text-start">About Us</p>
+                <p class="text-center md:text-start">Leadership</p>
+                <p class="text-center md:text-start">Careers</p>
+                <p class="text-center md:text-start">News & Articles</p>
+                <p class="text-center md:text-start">Legal Notice</p>
+            </div>
+            <div class="w-[30%] md:w-[20%] py-5">
+                <h3 class="text-center md:text-start text-xl font-semibold pb-5">Support</h3>
+                <p class="text-center md:text-start">Help Center</p>
+                <p class="text-center md:text-start">FAQ</p>
+                <p class="text-center md:text-start">Ticket Support</p>
+                <p class="text-center md:text-start">Contact Us</p>
+            </div>
+            <div class="w-[60%] md:w-[20%] py-5 flex-col">
+                <h3 class="text-center md:text-start text-xl font-semibold pb-5">Services</h3>
+                <p class="text-center md:text-start">Academy</p>
+                <p class="text-center md:text-start">Group Lesson</p>
+                <p class="text-center md:text-start">Private Lesson</p>
+                <p class="text-center md:text-start">Hockeys For Kids</p>
+                <p class="text-center md:text-start">Hockeys for Adults</p>
+            </div>
+
+        </footer>
+
+        <!-- footer section ends -->
+        
+
+
+    </div>
     
 </body>
 </html>

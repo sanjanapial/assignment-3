@@ -72,7 +72,7 @@
 
             <!-- carousel starts -->
 
-            <div class="carousel w-full py-3">
+            <div class="carousel w-full py-3 relative">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="Images/1.png" class="w-full" />
                   <div class="absolute bottom-3 w-full flex justify-center md:justify-start">
@@ -80,13 +80,15 @@
                     <a href="#slide2" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&gt;</a>
                   </div>
                 </div> 
+
                 <div id="slide2" class="carousel-item relative w-full">
                   <img src="Images/2.png" class="w-full" />
                   <div class="absolute bottom-3 w-full flex justify-center md:justify-start">
                     <a href="#slide1" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&lt;</a> 
                     <a href="#slide3" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&gt;</a>
                   </div>
-                </div> 
+                </div>
+
                 <div id="slide3" class="carousel-item relative w-full">
                   <img src="Images/3.png" class="w-full" />
                   <div class="absolute bottom-3 w-full flex justify-center md:justify-start">
@@ -94,6 +96,7 @@
                     <a href="#slide4" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&gt;</a>
                   </div>
                 </div> 
+
                 <div id="slide4" class="carousel-item relative w-full">
                   <img src="Images/4.png" class="w-full" />
                   <div class="absolute bottom-3 w-full flex justify-center md:justify-start">
@@ -101,7 +104,20 @@
                     <a href="#slide1" class="btn btn-circle mx-2 border-none bg-zinc-600 text-white font-extrabold text-xl">&gt;</a>
                   </div>
                 </div>
-              </div>
+
+                <div class="hidden md:block bg-zinc-700 text-white px-5 py-8 absolute right-10 bottom-5 rounded-xl">
+                    <h3 class="pb-4 text-xl font-semibold">Meet all the heroes from the field</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, reiciendis.</p>
+                </div>
+
+                
+
+            </div>
+
+            <div class="block md:hidden text-white bg-zinc-700 px-5 py-8 rounded-xl">
+                <h3 class="pb-4 text-xl font-semibold">Meet all the heroes from the field</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, reiciendis.</p>
+            </div>
 
               <!-- carousel ends -->
 
